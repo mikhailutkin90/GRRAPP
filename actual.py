@@ -30,6 +30,4 @@ response = requests.get(api_url)
 data = response.json()
 jy = data[0]
 lat = jy["lat"]
-lon = jy["lon"]
-print(lat)
-print(lon)'''
+lon = jy["lon"]'''
