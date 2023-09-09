@@ -3,11 +3,12 @@ import requests
 import os
 import actual
 
+
 class Test_Actual_Weather(unittest.TestCase):
 
     def test_weather_data_storage(self):
+        # Test if the file exists
         self.assertTrue(os.path.exists('ACTUAL.txt'))
-
 
     def test_weather_api_request(self):
         # Make a request to the weather API
